@@ -47,6 +47,37 @@ namespace Fall2022_Classes
         }
 
         //methods
+        //basic setup
+        //accessModifier returnType name ()
+        //{
+        // code to run;
+        //}
+        //example
+        public void Accelerate()
+        {
+            Speed += 5;
+        }
+        public void Accelerate(int speed)
+        {
+            Speed += speed;
+        }
+
+        //static method example
+        public static void Honk()
+        {
+            Console.WriteLine("HOOOOOONK!");
+        }
+
+        public float TimeToTravelDistance(int distance)
+        {
+            if (Speed == 0)
+            {
+                return 0;
+            }
+            return distance / Speed;  // integer division
+        }
+
+
 
     } 
 }
